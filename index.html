@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var liczba = 0;
+
+        function dodaj(){
+            liczba = document.getElementById('liczba').innerHTML = liczba + 1;
+        }
+
+        function odejmij(){
+            liczba = document.getElementById("liczba").innerHTML = liczba - 1;
+        }
+        function reset(){
+            liczba = document.getElementById("liczba").innerHTML = liczba = 0;
+        }
+    </script>
+</head>
+<body>
+    <div id="liczba">0</div>
+    <button onclick="dodaj()">dodaj</button>
+    <button onclick="odejmij()">odejmij</button>
+    <button onclick="reset()">reset</button>
+</body>
+</html>
